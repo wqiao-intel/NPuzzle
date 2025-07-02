@@ -1,8 +1,8 @@
 # NPuzzle
 In the 16-puzzle version of the game, a 4x4 board consists of 15 tiles numbered 1 through 15 and an empty tile
 (marked as 0). One may move any tile into an orthogonally adjacent empty square, but maynot move outside the board 
-or diagonally.The problem is to find a sequence of moves that transforms an initial board configuration into a 
-specified goal configuration. The following are examples of an initial and goal configurations.
+or diagonally.The problem is to find a sequence of moves that transform an initial board configuration into a 
+specified goal configuration. The following are examples of initial and goal configurations.
 
 Initial configuration
 
@@ -14,8 +14,7 @@ Goal configuration
 
 # Algorithm
 The mouse click is mapped to UP, DOWN, LEFT and RIGHT accordingly.
-Such as: 
-0 is in the tile of(2,3)，if  I click 11,   11 moves to the right. 
+Such as 0 is in the tile of(2,3)，if I click 11,  11 moves to the right. 
 
 ![goal](https://github.com/pangqiao/NPuzzle/blob/master/right.jpg)
 
@@ -30,9 +29,9 @@ def move( direction):
       column_0 -= 1 
 ```
 # Make sure the final configuration can be reached
-In initial  state, make all the data according to the final configuration first. And then 
+In initial state, make all the data according to the final configuration first. And then 
 move the tiles in random direction with different rounds. The round decides the different
-Level :easy, medium or high. 
+Level: easy, medium or high. 
 
 # Tool chain
 1. [Python3](https://www.python.org/)
